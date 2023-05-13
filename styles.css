@@ -3,6 +3,7 @@
 }
 .piel-quiz {
   padding: 1rem;
+  display: none;
 }
 
 .piel-quiz .question-title {
@@ -20,4 +21,11 @@
 
 .piel-quiz .question-option:hover {
   background-color: rgba(100, 100, 130, 0.5);
+}
+
+.qshow {
+  display: block;
+}
+.qhide {
+  display: none;
 }
