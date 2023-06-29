@@ -1,84 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
+
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <!--
       Need a visual blank slate?
       Remove all code in `styles.css`!
     -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <div class="piel-quiz" id="question-1">
-      <div class="question-title">1) Tu piel al tacto, es...</div>
-      <div class="question-option" data-question="1" data-option="a">
-        A- Gruesa y untuosa.
-      </div>
-      <div class="question-option" data-question="1" data-option="b">
-        B- Brillante en la zona central, más seca en las mejillas.
-      </div>
-      <div class="question-option" data-question="1" data-option="c">
-        C- Fina y suave.
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="script.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row section-title2">
+      <div class="col col-md-10 col-md-offset-1">
+
+        <div class="steps">
+          <div class="point steps-1"></div>
+          <div class="point steps-2"></div>
+          <div class="point steps-3"></div>
+          <div class="point steps-4"></div>
+          <div class="point steps-5"></div>
+          <div class="point steps-6"></div>
+        </div>
+        <div class="piel-quiz" id="question-1">
+          <div class="question-title">Tu piel al tacto, es...</div>
+          <div class="question-grid">
+            <div class="question-option" data-question="1" data-option="a">
+              Gruesa y untuosa.
+            </div>
+            <div class="question-option" data-question="1" data-option="b">
+              Brillante en la zona central, más seca en las mejillas.
+            </div>
+            <div class="question-option" data-question="1" data-option="c">
+              Fina y suave.
+            </div>
+          </div>
+        </div>
+        <div class="piel-quiz" id="question-2">
+          <div class="question-title" data-question="2">
+            ¿Tienes la piel brillante?
+          </div>
+          <div class="question-grid">
+            <div class="question-option" data-question="2" data-option="a">
+              Siempre.
+            </div>
+            <div class="question-option" data-question="2" data-option="b">
+              A veces, sobre todo en la frente, la nariz y la barbilla.
+            </div>
+            <div class="question-option" data-question="2" data-option="c">
+              Nunca.
+            </div>
+          </div>
+        </div>
+        <div class="piel-quiz" id="question-3">
+          <div class="question-title">
+            ¿Sueles tener granitos e imperfecciones?
+          </div>
+
+          <div class="question-grid">
+            <div class="question-option" data-question="3" data-option="a">
+              Siempre.
+            </div>
+            <div class="question-option" data-question="3" data-option="b">
+              En ocasiones.
+            </div>
+            <div class="question-option" data-question="3" data-option="c">
+              Casi nunca.
+            </div>
+          </div>
+        </div>
+        <div class="piel-quiz" id="question-4">
+          <div class="question-title">¿Notas tirantez o sequedad?</div>
+
+          <div class="question-grid">
+            <div class="question-option" data-question="4" data-option="a">
+              Siempre.
+            </div>
+            <div class="question-option" data-question="4" data-option="b">
+              A veces, más en invierno.
+            </div>
+            <div class="question-option" data-question="4" data-option="c">
+              Casi siempre.
+            </div>
+          </div>
+        </div>
+        <div class="piel-quiz" id="question-5">
+          <div class="question-title">¿Tienes poros abiertos?</div>
+
+          <div class="question-grid">
+            <div class="question-option" data-question="5" data-option="a">
+              Sí, suelo tenerlos.
+            </div>
+            <div class="question-option" data-question="5" data-option="b">
+              A veces, en la nariz y la barbilla.
+            </div>
+            <div class="question-option" data-question="5" data-option="c">
+              No.
+            </div>
+          </div>
+        </div>
+        <div class="piel-quiz" id="question-6">
+
+          <div class="question-grid">
+            <div class="question-option" data-question="6" data-option="lineas">
+              <input type="checkbox" name="lineas" id="lineas" value="lineas">
+              Lineas de expresión marcadas en el contorno de los ojos
+            </div>
+            <div class="question-option" data-question="6" data-option="manchas">
+              <input type="checkbox" name="manchas" id="manchas" value="manchas">
+              Tengo manchas en la piel
+            </div>
+          </div>
+          <div class="question-grid">
+            <a class="btn quiz-finalizar" href="test-de-piel.html">Finalizar</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="piel-quiz" id="question-2">
-      <div class="question-title" data-question="2">
-        2) ¿Tienes la piel brillante?
-      </div>
-      <div class="question-option" data-question="2" data-option="a">
-        A- Siempre.
-      </div>
-      <div class="question-option" data-question="2" data-option="b">
-        B- A veces, sobre todo en la frente, la nariz y la barbilla.
-      </div>
-      <div class="question-option" data-question="2" data-option="c">
-        C- Nunca.
-      </div>
-    </div>
-    <div class="piel-quiz" id="question-3">
-      <div class="question-title">
-        3) ¿Sueles tener granitos e imperfecciones?
-      </div>
-      <div class="question-option" data-question="3" data-option="a">
-        A- Siempre.
-      </div>
-      <div class="question-option" data-question="3" data-option="b">
-        B- En ocasiones.
-      </div>
-      <div class="question-option" data-question="3" data-option="c">
-        C- Casi nunca.
-      </div>
-    </div>
-    <div class="piel-quiz" id="question-4">
-      <div class="question-title">4) ¿Notas tirantez o sequedad?</div>
-      <div class="question-option" data-question="4" data-option="a">
-        A- Siempre.
-      </div>
-      <div class="question-option" data-question="4" data-option="b">
-        B- A veces, más en invierno.
-      </div>
-      <div class="question-option" data-question="4" data-option="c">
-        C- Casi siempre.
-      </div>
-    </div>
-    <div class="piel-quiz" id="question-5">
-      <div class="question-title">5) ¿Tienes poros abiertos?</div>
-      <div class="question-option" data-question="5" data-option="a">
-        A- Sí, suelo tenerlos.
-      </div>
-      <div class="question-option" data-question="5" data-option="b">
-        B- A veces, en la nariz y la barbilla.
-      </div>
-      <div class="question-option" data-question="5" data-option="c">
-        C- No.
-      </div>
-    </div>
-    <div class="piel-quiz" id="question-6">
-      <h1>Result</h1>
-      <pre id="result"></pre>
-    </div>
-  </body>
+  </div> <!-- end of container -->
+</body>
+
 </html>
